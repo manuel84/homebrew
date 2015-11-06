@@ -14,9 +14,9 @@ class Minisat3 < Formula
 
   def install
     ENV["MROOT"] = buildpath
-    system "make", "-C", "core", "r"
-    puts bin
-    puts lib
+    #system "make", "-C", "core", "r"
+    system "echo", bin
+    system "echo", lib
     bin.install "core/minisat_release" => "minisat"
     #lib.install 'core/libminisat_release.a' => 'libminisat.a'
     lib.install 'core/libminisat.dylib'
