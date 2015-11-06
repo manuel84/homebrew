@@ -1,4 +1,4 @@
-class MinisatDev < Formula
+class Minisat3 < Formula
   desc "Boolean satisfiability (SAT) problem solver"
   homepage "http://minisat.se"
   url "https://github.com/niklasso/minisat/archive/releases/2.2.0.tar.gz"
