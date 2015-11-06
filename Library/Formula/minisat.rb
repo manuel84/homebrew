@@ -16,6 +16,8 @@ class Minisat < Formula
     ENV["MROOT"] = buildpath
     system "make", "-C", "simp", "r"
     bin.install "simp/minisat_release" => "minisat"
+    lib.install 'libminisat_release.a' => 'libminisat.a'
+    lib.install 'libminisat.dylib'
   end
 end
 
